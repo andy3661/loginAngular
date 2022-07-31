@@ -1,0 +1,76 @@
+<section>
+    <div class="container">
+      
+        <div class="d-flex flex-column inicio">
+      <mat-card>
+          <mat-card-title>Registry</mat-card-title>
+    <mat-card-content>
+      <form [formGroup]="form" (ngSubmit)="submit()">
+          <div class="row">
+              <div class="col-md-6">
+        <p>
+            <mat-form-field appearance="fill">
+                <mat-label>Documento</mat-label>
+                <input matInput formControlName="documento" required>
+              </mat-form-field>
+            </p>
+            <p>
+
+           
+              <mat-form-field appearance="fill">
+                <mat-label>Nombre</mat-label>
+                <input matInput formControlName="nombre" required>
+              </mat-form-field>
+            </p>
+              <mat-form-field appearance="fill">
+                <mat-label>Apellido</mat-label>
+                <input matInput formControlName="apellido" required>
+              </mat-form-field>
+      
+        
+        
+            <p>
+            <mat-form-field appearance="fill">
+                <mat-label>Telefono</mat-label>
+                <input matInput formControlName="telefono" required>
+              </mat-form-field>
+            </p>
+        </div>
+        <div class="col-md-6">
+            <p>
+              <mat-form-field appearance="fill">
+                <mat-label>Correo</mat-label>
+                <input matInput formControlName="correo" required>
+              </mat-form-field>
+            </p>
+            <p>
+              <mat-form-field appearance="fill">
+              <mat-label>Direccion</mat-label>
+              <input matInput formControlName="direccion" required>
+            </mat-form-field>
+        </p>
+
+            <p>
+            <mat-form-field appearance="fill">
+                <mat-label>Ciudad</mat-label>
+                <input matInput formControlName="ciudad" required>
+              </mat-form-field>
+        </p>
+    </div>
+    </div>
+       
+  
+        <!-- <p *ngIf="error" class="error">
+          {{ error }}
+        </p> -->
+  
+        <div class="button">
+          <button type="submit" mat-button>Sing Up</button>
+        </div>
+  
+      </form>
+    </mat-card-content>
+  </mat-card>
+  </div>
+  </div>
+  </section>
